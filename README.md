@@ -22,3 +22,20 @@ The drivers where fooled, only the GPU pipeline information in GPU-z was correct
 
 ## How does this work?
 
+Every GPU comes with a small bit of configuration data and initialization code stored on a SPI Flash chip/EEPROM.
+Commonly this is referred to as the _"VBIOS"_. This is actually a bit of a misnomer, But I wont go into that now.
+
+When the GPU powers on, a small processor inside the GPU reads this data and uses it to configure the rest of the actual graphics card.
+Usually this chip stores no more than 64Kilobytes of data specific to that graphics card in it's current configuration.
+
+Every Graphics card model and type has a differently configured VBIOS.
+
+In simple terms this configuration includes detail such as:
+
+1. The GPU name and type.
+2. Clock frequency information for the GPU core and RAM.
+3. The RAM it uses and timings thereof.
+4. The display outputs and connectors on the circuit board.
+5. Power configuration.
+6. Fan speed and temperature management related settings.
+
