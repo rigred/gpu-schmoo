@@ -39,3 +39,4 @@ In simple terms this configuration includes detail such as:
 5. Power configuration.
 6. Fan speed and temperature management related settings.
 
+### Work in progress
