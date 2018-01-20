@@ -9,7 +9,7 @@ Graphics cards sold on ebay, which where sold at low prices and where not at all
 One such youtube channel I watch is PhilsComputerlab.
 Out of curiosity he had bought a GTX960 4Gb on an ebay deal that looked too good to be true.
 
-[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/Ved84d_6occ/0.jpg)](https://www.youtube.com/watch?v=Ved84d_6occ)
+[![Fake GTX 960 graphics card eBay scam](https://img.youtube.com/vi/Ved84d_6occ/0.jpg)](https://www.youtube.com/watch?v=Ved84d_6occ)
 
 Upon receiving the card, he set to task disassembling and documenting it in detal. 
 It turned out that the GPU chip was actually a GF116-200-KA-A1 a second Generation Fermi architecture GPU, a rather far cry from the Maxwell architecture GM206 as used in the GTX 960.
