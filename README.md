@@ -1,6 +1,8 @@
 # gpu-schmoo
 A repository documenting fake GPU's and VBIOS hacks.
 
+***Note:*** This is a work in progres.
+
 ## Introduction
 
 A short while ago It came to my attention that a lot of youtubers where reviewing "Fake Graphics cards".
@@ -39,4 +41,17 @@ In simple terms this configuration includes detail such as:
 5. Power configuration.
 6. Fan speed and temperature management related settings.
 
-### Work in progress
+### == Work in progress == ###
+
+## Binary and Hexadecimal
+
+## VBIOS Straps
+
+## Important Offsets
+
+## Fixing the VBIOS
+
+## Dangers of BIOS tweaking
+
+## Interesting observations
+
