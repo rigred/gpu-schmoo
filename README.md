@@ -43,6 +43,8 @@ In simple terms this configuration includes detail such as:
 
 ### == Work in progress == ###
 
+## Finding and Flashing a matching VBIOS
+
 ## Binary and Hexadecimal
 
 ## VBIOS Straps
