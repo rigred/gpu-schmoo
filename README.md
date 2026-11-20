@@ -2,7 +2,7 @@
 
 ### Fake NVIDIA GPUs, counterfeit VBIOS identification, and recovering usable graphics cards
 
-**gpu-schmoo** is a reverse-engineering and repair project documenting counterfeit, relabelled, and incorrectly configured graphics cards—especially older NVIDIA GPUs sold as newer GeForce models. The aim is to identify the *real* silicon and physical memory, explain how the video BIOS misrepresents or misconfigures the board, and recover a working configuration where the hardware permits it.
+**gpu-schmoo** is a reverse-engineering and repair project documenting counterfeit, relabelled, and incorrectly configured graphics cards-especially older NVIDIA GPUs sold as newer GeForce models. The aim is to identify the *real* silicon and physical memory, explain how the video BIOS misrepresents or misconfigures the board, and recover a working configuration where the hardware permits it.
 
 A fake GTX 960 cannot be turned into a genuine GTX 960 by flashing firmware. But the real GPU underneath may be salvageable as a correctly identified, correctly configured older card.
 
@@ -46,7 +46,7 @@ The investigation began with coverage of suspicious low-cost cards, including a 
 
 **[Watch: Fake GTX 960 graphics card eBay scam](https://www.youtube.com/watch?v=Ved84d_6occ)**
 
-The original card investigated in this repository was marketed as a GTX 960, but the GPU package was identified as **GF116-200-KA-A1**, from NVIDIA's older **Fermi** family—not the **GM206 Maxwell** GPU used in a genuine GTX 960.
+The original card investigated in this repository was marketed as a GTX 960, but the GPU package was identified as **GF116-200-KA-A1**, from NVIDIA's older **Fermi** family-not the **GM206 Maxwell** GPU used in a genuine GTX 960.
 
 The visible DRAM population also contradicted the advertised capacity. Four **2-Gbit** memory devices provide, in total:
 
@@ -59,7 +59,7 @@ This assumes those four devices are the complete population and their part marki
 
 The fascinating part is that the system could still report the counterfeit GTX 960 identity. That is possible because different diagnostic fields come from different places: some from software-visible identity or VBIOS records, and others from hardware architecture and controller registers. Cross-checking them exposes inconsistencies that a simple model-name lookup misses.
 
-A repair should recover the GF116 card as whatever actual board configuration it supports—not attempt to unlock Maxwell capabilities that do not exist in Fermi silicon.
+A repair should recover the GF116 card as whatever actual board configuration it supports-not attempt to unlock Maxwell capabilities that do not exist in Fermi silicon.
 
 ## What the VBIOS actually controls
 
@@ -86,7 +86,7 @@ Likewise, the locations of fields change between VBIOS generations and table ver
 3. **Read every DRAM marking.** Look up manufacturer part numbers and calculate per-chip density, organization, data width, and installed total capacity.
 4. **Identify the PCB.** Note memory footprints, missing/unused chip positions, power circuitry, display connectors, and SPI flash part/capacity.
 5. **Capture the live device identity and diagnostic information.** Record PCI vendor/device/subsystem IDs, GPU revision, reported memory capacity and width, and accessible memory-controller topology.
-6. **Dump the original VBIOS—preferably more than once.** Compare dump hashes and retain the untouched originals off-card.
+6. **Dump the original VBIOS-preferably more than once.** Compare dump hashes and retain the untouched originals off-card.
 7. **Compare against possible donor ROMs.** Match GPU generation, board circuitry, memory IC family, bus population, voltage controller, display wiring, and flash layout. A matching marketed model is not enough.
 
 On Linux, useful read-only starting points include:
@@ -214,7 +214,7 @@ There are three broad approaches, listed in preferred order when applicable:
 
 **2. Patch the existing ROM conservatively.** Often safer when the card is an unusual Chinese PCB with no exact reference board. Preserve its working display, voltage and power initialization while correcting only verified identity, memory geometry, and timing defects.
 
-**3. Selectively import from a compatible donor.** Use the Workbench's supported donor controls where appropriate—for example, recognized same-family clock/power-state or timing structures, or a single matched geometry word. Never assume wholesale table imports are compatible merely because the memory capacity is similar.
+**3. Selectively import from a compatible donor.** Use the Workbench's supported donor controls where appropriate-for example, recognized same-family clock/power-state or timing structures, or a single matched geometry word. Never assume wholesale table imports are compatible merely because the memory capacity is similar.
 
 Check the chip's SPI ROM capacity and legacy/EFI image chain, too. Checksums are necessary for supported ROM formats but do **not** make a donor compatible or bypass firmware signatures.
 
@@ -311,7 +311,7 @@ Prefer reproducible cases over universal recipes. A failed experiment with a cle
 
 - [Original gpu-schmoo repository](https://github.com/rigred/gpu-schmoo)
 - [Original VBIOS structure observations](vbios_structure_notes.md)
-- [PhilsComputerLab — Fake GTX 960 graphics card eBay scam](https://www.youtube.com/watch?v=Ved84d_6occ)
+- [PhilsComputerLab - Fake GTX 960 graphics card eBay scam](https://www.youtube.com/watch?v=Ved84d_6occ)
 - [envytools / nvbios](https://github.com/envytools/envytools)
 - [Nouveau open-source NVIDIA driver research](https://nouveau.freedesktop.org/)
 - [Nouveau RAMCFG code](https://linux.googlesource.com/linux/kernel/git/tip/tip/+/refs/heads/perf/urgent/drivers/gpu/drm/nouveau/nvkm/subdev/bios/ramcfg.c)
